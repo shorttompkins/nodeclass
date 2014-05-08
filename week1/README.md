@@ -15,7 +15,7 @@ https://www.mongodb.org/downloads
 $ mkdir -p ~/mongodb
 $ cd ~/Downloads
 $ tar -xvf *.tgz
-$ mv mongodb-osx-x86_64-2.4.9/ ~/mongodb
+$ mv mongodb-osx-x86_64-2.4.9 ~/mongodb
 ```
 
 ```
