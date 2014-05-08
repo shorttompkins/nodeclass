@@ -8,6 +8,7 @@ The success of this code should simple launch a configured express server that d
 
 Ensure your project structure looks like the following:
 
+```
 /(your_project_name)
 ---/helpers
 ---/controllers
@@ -21,6 +22,7 @@ Ensure your project structure looks like the following:
 ---/views
 ------/layouts
 ------/partials
+```
 
 ### To Launch
 
