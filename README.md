@@ -1,4 +1,5 @@
-# Basic Web App Developer @ AWeber Academy
+# Basic Web App Development
+### @ AWeber Academy
 
 The course materials for the class.
 
