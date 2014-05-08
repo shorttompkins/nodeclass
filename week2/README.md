@@ -27,6 +27,7 @@ Ensure your project structure looks like the following:
 ### To Launch
 
 ```
+    $ npm install
     $ node server.js
     Server up: http://localhost:3300
 ```
