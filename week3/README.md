@@ -7,6 +7,7 @@ The success of this code should launch your existing express server and have HTM
 ### To Launch
 
 ```
+    $ npm install
     $ node server.js
     Server up: http://localhost:3300
 ```
