@@ -8,8 +8,8 @@ The success of this code should launch your site and be fully database integrate
 
 ```
     $ npm install
-    $ mongod&
-    $ node server.js
+    $ mongod (in 1 tab)
+    $ node server.js (in another tab)
     Server up: http://localhost:3300
     Mongoose connected.
 ```
