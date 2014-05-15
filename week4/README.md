@@ -8,11 +8,12 @@ The success of this code should launch your site and be fully database integrate
 
 ```
     $ npm install
-    $ mongod (in a separate Terminal window: ⌘-T)
+    $ mongod&
     $ node server.js
     Server up: http://localhost:3300
     Mongoose connected.
 ```
+*Note: mongod& is a special command that runs the MongoDB server but forces it to run in the background.  You could run it as `mongod` but then you would need to leave that tab open and open another new tab to run node separately.  To end a program that you ran with & execute: `$ ps aux | grep mongod' and it will show you 2 items, the first is mongod the 2nd is grep mongod.  The number that appears after your name in the left most column of data is its id.  To kill that service execute `$ kill IDNUMBER' (replacing IDNUMBER with whatever number was listed in the output of ps aux)
 
 Open your browser and point to http://localhost:3300
 
