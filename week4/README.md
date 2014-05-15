@@ -2,7 +2,7 @@
 
 The complete code from lessons covered during week 4.
 
-The success of this code should launch your existing express server and have HTML pages (views) accessible in the browser
+The success of this code should launch your site and be fully database integrated.  Adding new images via the upload form on the homepage should work fine.  Viewing existing images from thumbnails on the homepage should also work.
 
 ### To Launch
 
