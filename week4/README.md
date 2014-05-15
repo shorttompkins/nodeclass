@@ -24,7 +24,8 @@ Additional our home and image controllers are both full tied to the MongoDB data
 
 A few changes were made to existing code from the previous week:
 
-* The `package.json` file was updated to include new dependencies for Mongoose, Async, and MD5. (Don't forget to run `npm install` after you edit your package.json file!)
+* The `package.json` file was updated to include new dependencies for Mongoose, Async, and MD5. 
+(Don't forget to run `npm install` after you edit your package.json file!)
 * The `server.js` file was tweaked slightly to include code to open a connection to our MongoDB server using Mongoose.
 * A new folder named `helpers` was added and within that a new `models.js` file that contains all of the code for our 2 data models: Image and Comments
 * The `controllers/home.js` controller was completly changed.  It now retrieves all of the images in newest order.
