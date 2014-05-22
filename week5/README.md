@@ -23,3 +23,4 @@ A few changes were made to existing code from the previous week:
 
 * Update the `image.js` controller adding the code for both the `like` and `comment` functions.
 * Update the `res.render('image', viewModel)` line in the `image` function with the slightly updated code that first retrieves the list of comments from MongoDB and appends them to the `viewModel` and then executes the render.
+* Include `public/js/scripts.js' and include code from the file in the repo.
