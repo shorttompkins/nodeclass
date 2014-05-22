@@ -18,7 +18,10 @@ module.exports = {
                 viewModel.image.views = viewModel.image.views + 1;
                 viewModel.image.uniqueId = req.params.image_id;
 
-                res.render('image', viewModel);
+                models.Comment.find({ image_id: images[0]._id}, {}, { sort: { 'timestamp': 1 }}, function(err, comments){
+                    viewModel.comments = comments;
+                    res.render('image', viewModel);
+                });
 
                 // increment the views counter:
                 models.Image.update(
@@ -77,9 +80,27 @@ module.exports = {
         saveImage();
     },
     like: function(req, res) {
-        res.send('The image:like POST controller');
+        models.Image.findOne({ filename: { $regex: req.params.image_id } }, function(err, image) {
+            image.likes = image.likes + 1;
+            image.save(function(err) {
+                if (err) {
+                    res.json(err);
+                } else {
+                    res.json({ likes: image.likes });
+                }
+            });
+        });
     },
     comment: function(req, res) {
-        res.send('The image:comment POST controller');
+        models.Image.findOne({ filename: { $regex: req.params.image_id } }, function(err, image) {
+            var newComment = new models.Comment(req.body);
+            newComment.gravatar = md5(newComment.email);
+            newComment.image_id = image._id;
+            newComment.save(function(err, comment) {
+                if (err) throw err;
+                res.redirect('/images/' + image.uniqueId + '#' + comment._id);
+            });
+        });
+
     }
 };
