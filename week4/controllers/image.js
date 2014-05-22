@@ -61,7 +61,7 @@ module.exports = {
                             });
                             newImg.save(function(err, image) {
                                 console.log('Successfully inserted image: ' + image.filename);
-                                res.redirect('/images/' + image.uniqueId);
+                                res.redirect('/images/' + imgUrl);
                             });
                         });
                     } else {
