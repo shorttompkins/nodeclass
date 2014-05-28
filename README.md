@@ -3,4 +3,4 @@
 
 The course materials for the class.
 
-This repo only includes the code, not slides or discussion material.
+This repo contains the complete code base for every week as it is expanded and discussed during each class.  Additionally the PowerPoint presentation file is available to see some of the main bullets discussed each week.
