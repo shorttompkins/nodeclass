@@ -36,3 +36,7 @@ A few changes were made to existing code from the previous week:
         res.render('image', viewModel);
     });
 ```
+* Include the necessary require() at the top of the home and index controllers so that the sidebar module is available to use within the controller:
+```
+sidebar = require('../helpers/sidebar');
+```
