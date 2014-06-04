@@ -28,7 +28,7 @@ From the command line in your project root folder:
 
 1. git init
 2. git commit -am “Initial commit"
-3. heroku commands
+3. heroku commands:
     1. heroku login
     2. touch Procfile
     3. [edit] Procfile
@@ -37,7 +37,7 @@ From the command line in your project root folder:
     5. heroku addons:add mongohq
 4. Access your heroku app online: https://dashboard.heroku.com/apps/APP_NAME_HERE/resources
 5. Click MongoHQ addon to goto Control Panel
-6. Click Admin in left sidebar then Users tag
+6. Click Admin in left sidebar then Users tab
 7. Create a new username and password
 8. Copy the URI from the Overview tab
     1. mongodb://<user>:<password>@kahana.mongohq.com:10072/app26015562
